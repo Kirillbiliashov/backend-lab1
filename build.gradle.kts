@@ -18,6 +18,12 @@ application {
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=$isDevelopment")
 }
 
+ktor {
+    fatJar {
+        archiveFileName.set("backend-lab1.jar")
+    }
+}
+
 repositories {
     mavenCentral()
 }
